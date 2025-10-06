@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Money Tracker</h1>
+        </header>
+
+        <div class="card">
+            <h2>Transactions</h2>
+            <div id="balancesList">
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Add New Expense</h2>
+            <input type="text" id="description" class="input-field" placeholder="Purpose">
+            <input type="number" id="amount" class="input-field" placeholder="Amount" min="0.01" step="0.01">
+            <input type="text" id="paidBy" class="input-field" placeholder="Sent from">
+            <input type="text" id="splitWith" class="input-field" placeholder="Sent to">
+            <button id="addExpenseBtn" class="btn-primary">Add Expense</button>
+        </div>
+
+        <div class="card">
+            <h2>Expense History</h2>
+            <div id="expensesList">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
